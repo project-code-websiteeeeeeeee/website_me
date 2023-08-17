@@ -6,4 +6,4 @@ view = Blueprint("view","app")
 def homes():
     return render_template("index.html",name="gay")
 
-@view.route("/")
+@view.route("/")ddd
