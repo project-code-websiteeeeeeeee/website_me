@@ -3,10 +3,12 @@ from flask import Blueprint, render_template
 view = Blueprint("view","app")
 
 @view.route("/")
-def homes():
-    return render_template("lol.html",name="gay")
+def lol():
+    return render_template("index.html",name="gay")
 
-
+@view.route("/home")
+def home():
+    return render_template("lol.html")
 
 @view.route("/profile/<username>")
 def profile(username):
