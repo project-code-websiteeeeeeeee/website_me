@@ -1,13 +1,13 @@
 <html>
 <head>
     <title>How to make a website - Easy Tutorials</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
 <div class="bar"></div>
  <div class="banner">
  <div class="navbar">
-    <img src="vector-logo.png" class="logo">
+    <img src="{{ url_for('static', filename='vector-logo.png') }}" class="logo">
     <ul>
         <li><a href="#">Home</a></1i>
         <li><a href="#"> Youtube</a></li>
