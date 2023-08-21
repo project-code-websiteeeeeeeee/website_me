@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
+{% block body %}
 <div class="bar"></div>
  <div class="banner">
  <div class="navbar">
@@ -25,6 +26,7 @@
         <button type="button"><span></span>click me</button>
     </div>
  </div>
+ {% blockend %}
 </body>
 
 </html>

@@ -8,7 +8,7 @@ def lol():
 
 @view.route("/home")
 def home():
-    return render_template("gay.html")
+    return render_template("home.html")
 
 @view.route("/profile/<username>")
 def profile(username):
